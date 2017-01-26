@@ -25,7 +25,7 @@ When you call Register all methods for that instance type (interface) which begi
 
 Finally you can Submit events to your bus using:
 
-`eventBus.Submit(&evt)`
+`eventBus.Submit(&evt, false)`
 
 All registered methods which take an argument that has the same type as the event passed will now be invoked with the event passed as an argument.
 
